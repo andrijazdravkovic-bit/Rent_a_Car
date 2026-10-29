@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 520px;
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 35px 30px;
+    border-radius: 14px;
+    border: 1px solid #2a2a2a;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.porukaInfo {
+    background-color: #242424;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #2d2d2d;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.porukaKorisnik {
+    color: #27ae60;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.porukaTekst {
+    color: #cccccc;
+    font-size: 14px;
+    font-style: italic;
+    word-wrap: break-word;
+}
+
+.inputGrupa {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.inputGrupa label {
+    display: block;
+    color: #cccccc;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.inputGrupa textarea {
+    width: 100%;
+    padding: 12px 14px;
+    background-color: #181818;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+}
+
+.inputGrupa textarea:focus {
+    border-color: #27ae60;
+}
+
+.submitBtn {
+    width: 100%;
+    background-color: #27ae60;
+    color: #ffffff;
+    border: none;
+    padding: 13px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submitBtn:hover {
+    background-color: #219150;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.4);
+}
+
+.nazadWrapper {
+    margin-top: 15px;
+}
+
+.nazadBtn {
+    display: block;
+    width: 100%;
+    background-color: #282828;
+    color: #cccccc;
+    padding: 11px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #333333;
+    transition: all 0.3s ease;
+}
+
+.nazadBtn:hover {
+    background-color: #333333;
+    color: #ffffff;
+}

@@ -1,0 +1,98 @@
+.oNamaMreza {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.oNamaKartica {
+    background-color: #282828;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #333333;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.oNamaKartica:hover {
+    transform: translateY(-5px);
+    border-color: #27ae60;
+}
+
+.oNamaKartica h3 {
+    color: #27ae60;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.oNamaKartica p {
+    color: #b0b0b0;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.zaposleniSekcija {
+    padding: 20px 20px 60px 20px;
+    text-align: center;
+}
+
+.zaposleniMreza {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.zaposlenKartica {
+    background-color: #222222;
+    border-radius: 12px;
+    padding: 40px 30px;
+    max-width: 380px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid #2a2a2a;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.zaposlenKartica:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+.zaposlenIkonica {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.zaposlenKartica h3 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.zaposlenKartica .pozicija {
+    color: #27ae60;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.instagramDugme {
+    display: inline-block;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(220, 39, 67, 0.3);
+}
+
+.instagramDugme:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(220, 39, 67, 0.5);
+    opacity: 0.95;
+}

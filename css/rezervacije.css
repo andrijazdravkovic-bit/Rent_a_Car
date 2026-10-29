@@ -1,0 +1,86 @@
+.rezervacijaSekcija {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+}
+
+.rezervacijaKontejner {
+    background-color: #222222;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #2a2a2a;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    max-width: 550px;
+    width: 100%;
+    text-align: center;
+}
+
+.rezervacijaKontejner h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.upozorenjeBox {
+    background-color: rgba(231, 76, 60, 0.15);
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.inputGrupa {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.inputGrupa label {
+    display: block;
+    color: #cccccc;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.inputGrupa select, .inputGrupa input[type="date"] {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #181818;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    color-scheme: dark;
+}
+
+.inputGrupa select:focus, .inputGrupa input[type="date"]:focus {
+    border-color: #27ae60;
+}
+
+.submitDugme {
+    width: 100%;
+    background-color: #27ae60;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.submitDugme:hover {
+    background-color: #219150;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(39, 174, 96, 0.4);
+}

@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body.loginBody {
+    font-family: Arial, sans-serif;
+    background-image: url('../slike/slika1.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.loginOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.loginKontejner {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(26, 26, 26, 0.92);
+    padding: 40px 35px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    max-width: 420px;
+    width: 90%;
+    text-align: center;
+    backdrop-filter: blur(8px);
+}
+
+.loginKontejner h2 {
+    color: #ffffff;
+    font-size: 26px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.inputGrupa {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.inputGrupa label {
+    display: block;
+    color: #cccccc;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.inputGrupa input {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #121212;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.inputGrupa input:focus {
+    border-color: #27ae60;
+}
+
+.submitDugme {
+    width: 100%;
+    background-color: #27ae60;
+    color: #ffffff;
+    border: none;
+    padding: 13px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.submitDugme:hover {
+    background-color: #219150;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(39, 174, 96, 0.4);
+}
+
+.greska {
+    background-color: rgba(231, 76, 60, 0.2);
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.gostDugme {
+    width: 100%;
+    background-color: transparent;
+    color: #cccccc;
+    border: 1px solid #444444;
+    padding: 11px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: all 0.3s ease;
+}
+
+.gostDugme:hover {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border-color: #666666;
+}
+
+.registracija {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #2d2d2d;
+}
+
+.registracija p {
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+.registracija a {
+    color: #27ae60;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.registracija a:hover {
+    color: #219150;
+    text-decoration: underline;
+}
+

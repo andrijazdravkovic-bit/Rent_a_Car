@@ -1,0 +1,255 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #181818;
+    color: #ffffff;
+}
+
+header {
+    background-color: rgb(81, 76, 72);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 0;
+    display: inline-block;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.6s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.heroSection {
+    position: relative;
+    width: 100%;
+    height: 420px; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.heroSlika {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.45); 
+    z-index: 1;
+}
+
+.heroOverlay {
+    position: relative;
+    z-index: 2;
+    padding: 0 20px;
+    max-width: 800px;
+}
+
+.heroOverlay h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.heroOverlay p {
+    font-size: 18px;
+    color: #e0e0e0;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.heroDugme {
+    display: inline-block;
+    background-color: #27ae60;
+    color: #ffffff;
+    padding: 12px 32px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(39, 174, 96, 0.4);
+}
+
+.heroDugme:hover {
+    background-color: #219150;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(39, 174, 96, 0.6);
+}
+
+.opisSekcija {
+    background-color: #202020;
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.opisSadrzaj {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.opisSadrzaj h2 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.opisSadrzaj > p {
+    color: #b0b0b0;
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto 35px auto;
+    line-height: 1.6;
+}
+
+.opisMreza {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.opisKartica {
+    background-color: #282828;
+    padding: 25px 20px;
+    border-radius: 10px;
+    border: 1px solid #333333;
+}
+
+.opisKartica h3 {
+    color: #27ae60;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.opisKartica p {
+    color: #b0b0b0;
+    font-size: 14px;
+    margin: 0;
+}
+
+.sekcijaNaslov {
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    margin: 50px 0 10px 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.ponuda {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.ponudaDiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 20px auto 40px auto;
+    padding: 0 20px;
+}
+
+.ponudaKvadrat {
+    background-color: #222222;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.ponudaKvadrat:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+.autoSlika {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.ponudaKvadrat:hover .autoSlika {
+    transform: scale(1.06);
+}
+
+.ponudaKvadrat a {
+    padding: 20px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.ponudaKvadrat h3 {
+    margin: 0 0 8px 0;
+    font-size: 19px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.ponudaKvadrat p {
+    margin: 5px 0;
+    color: #b0b0b0;
+    font-size: 14px;
+}
+
+.ponudaKvadrat p:last-of-type {
+    color: #27ae60;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: rgb(81, 76, 72);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    width: 100%;
+}
